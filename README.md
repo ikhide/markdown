@@ -19,8 +19,8 @@ The first thing to take note of is passing the right arguments.
 | Argument |                                    Function                                     |           Default            |
 | -------- | :-----------------------------------------------------------------------------: | :--------------------------: |
 | -l       |          Backup path on local system where backup file will be stored.          | /Users/root/Documents/backup |
-| -n       |                          Database name. Default value                           |          'fyipedb'           |
-| -p       |                        Database password. Default value                         |          'password'          |
+| -n       |                                 Database name.                                  |          'fyipedb'           |
+| -p       |                               Database password.                                |          'password'          |
 | -r       |                               Helm release name.                                |             'fi'             |
 | -t       | Backup retain days. Set the number of days backup is kept before it is deleted. |              14              |
 | -u       |                             Set database username.                              |           'fyipe'            |
