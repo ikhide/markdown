@@ -4,7 +4,7 @@ To carry out backup/restore from a remote vm you first have to setup your local 
 
 The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters.
 
-Follow this link to install kubectl on your local machine and access remote cluster `https://dev.to/gvelrajan/configure-local-kubectl-to-remote-access-kubernetes-cluster-2g81`
+Follow this [link](https://dev.to/gvelrajan/configure-local-kubectl-to-remote-access-kubernetes-cluster-2g81) to learn how to install kubectl on your local machine and access a remote cluster
 
 ## Backing up the database
 
