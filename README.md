@@ -1,8 +1,12 @@
 # Fyipe Database Backup/Restore
 
-## Backing up the database
+To carry out backup/restore from a remote vm you first have to setup your local system for remote access.
 
-To set up a cronjob to backup the database to any VM/OS
+The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters.
+
+Follow this link to install kubectl on your local machine and access remote cluster `https://dev.to/gvelrajan/configure-local-kubectl-to-remote-access-kubernetes-cluster-2g81`
+
+## Backing up the database
 
 **_Step 1 : File/Folder set up_**
 
@@ -16,15 +20,15 @@ The first thing to take note of is passing the right arguments.
 - cd into folder containing backup script.
 - Enter command `bash backup.sh -h` to see list of all available commands
 
-| Argument |                                    Function                                     |           Default            |
-| -------- | :-----------------------------------------------------------------------------: | :--------------------------: |
-| -l       |          Backup path on local system where backup file will be stored.          | /Users/root/Documents/backup |
-| -n       |                                 Database name.                                  |          'fyipedb'           |
-| -p       |                               Database password.                                |          'password'          |
-| -r       |                               Helm release name.                                |             'fi'             |
-| -t       | Backup retain days. Set the number of days backup is kept before it is deleted. |              14              |
-| -u       |                             Set database username.                              |           'fyipe'            |
-| -h       |                                      Help                                       |             null             |
+| Argument | Function                                                                        | Default                      |
+| -------- | :------------------------------------------------------------------------------ | :--------------------------- |
+| -l       | Backup path on local system where backup file will be stored.                   | /Users/root/Documents/backup |
+| -n       | Database name.                                                                  | 'fyipedb'                    |
+| -p       | Database password.                                                              | 'password'                   |
+| -r       | Helm release name.                                                              | 'fi'                         |
+| -t       | Backup retain days. Set the number of days backup is kept before it is deleted. | 14                           |
+| -u       | Set database username.                                                          | 'fyipe'                      |
+| -h       | Help                                                                            | null                         |
 
 _ex: To create a backup of a database without username or password and database name is 'fyipe'_
 
