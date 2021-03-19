@@ -29,7 +29,7 @@ _ex: To create a backup of a database without username or password and database 
 
 The command will be `bash install.sh -u '' -p '' -n 'fyipe'`
 
-**\_Step 3 : Run backup**
+**_Step 3 : Run backup_**
 
 - Simply hit the enter button, enter the remote server password and any other credentials being requested for.
 
@@ -41,9 +41,9 @@ The command will be `bash install.sh -u '' -p '' -n 'fyipe'`
 
 `sudo systemctl status backup.timer` to check if timer is running and time left to when the service will be ran next.
 
-`sudo systemctl stop backup.service` to pause backup
+`sudo systemctl stop backup.timer` to pause backup
 
-`sudo systemctl start backup.service` to start backup
+`sudo systemctl start backup.timer` to start backup
 
 ## Restore a backup
 
